@@ -1,18 +1,12 @@
 {
   "name": "nim-slack-scheduling-bot",
   "version": "1.0.0",
-  "description": "An intelligent Slack bot that uses NVIDIA NIM to create optimized daily task schedules",
+  "description": "A simple Slack bot that uses NVIDIA NIM to create optimized daily task schedules",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix",
-    "db:migrate": "node database/migrate.js",
-    "db:seed": "node database/seed.js"
+    "test": "jest tests/"
   },
   "keywords": [
     "slack",
@@ -20,30 +14,18 @@
     "nvidia",
     "nim",
     "scheduling",
-    "ai",
-    "productivity"
+    "ai"
   ],
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
     "@slack/bolt": "^3.17.1",
     "axios": "^1.6.0",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "pg": "^8.11.0",
-    "mongoose": "^8.0.0",
-    "redis": "^4.6.0",
-    "winston": "^3.11.0",
-    "joi": "^17.11.0",
-    "moment": "^2.29.4",
-    "uuid": "^9.0.0"
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.0",
-    "jest": "^29.7.0",
-    "eslint": "^8.50.0",
-    "supertest": "^6.3.0",
-    "@types/jest": "^29.5.0"
+    "jest": "^29.7.0"
   },
   "engines": {
     "node": ">=18.0.0",
