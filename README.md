@@ -174,3 +174,5 @@ npm test
 ---
 
 **That's it!** A simple, powerful scheduling bot using your private NIM API. No databases, no complex deployment - just install, configure, and run.
+
+This is a test change made on the dev branch.
